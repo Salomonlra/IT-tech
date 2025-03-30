@@ -8,7 +8,7 @@
 
 /* 🔹 Estilo global */
 body {
-    background-color: #f0f4f7;
+    background-color: #88c6f5;
     color: #333;
 }
 
@@ -21,8 +21,8 @@ body {
 
 /* 🔹 Encabezado fijo con efecto flotante */
 header {
-    background-color: #333;
-    padding: 15px 0;
+    background-color: #4c53589c;
+    padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -264,3 +264,289 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+/* 🔹 Sección Principal (Home) */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Estilo para el Título de la Sección */
+#home h1 {
+    font-size: 2.8rem; /* Ajuste del tamaño de la fuente */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Estilo para el Párrafo dentro de la Sección */
+#home p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Imagen de Banner dentro de la Sección */
+#home .banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    max-height: 500px; /* Limitar altura para evitar que la imagen sea demasiado grande */
+    margin-top: 20px;
+}
+/* 🔹 Imagen Secundaria */
+.secondary-img {
+    width: 80%; /* Ancho reducido para que sea más pequeña que la imagen principal */
+    height: auto; /* Mantener las proporciones */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espaciado inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para destacarla */
+    display: block; /* Asegura que se comporta como un bloque */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto; /* Centrado horizontal */
+}
+
+/* 🔹 Diseño Responsivo para la Imagen Secundaria */
+@media (max-width: 768px) {
+    .secondary-img {
+        width: 100%; /* En pantallas pequeñas, la imagen secundaria puede ocupar todo el ancho */
+        max-width: 500px; /* Limitar el tamaño máximo */
+    }
+}
+/* 🔹 Sección de Servicios */
+#services {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+/* 🔹 Título de la sección de Servicios */
+#services h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Contenedor de cada Servicio */
+.service-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Imagen del Servicio */
+.service-img {
+    width: 40%; /* Imagen ocupa el 40% del ancho */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor de la imagen */
+}
+
+/* 🔹 Texto del Servicio */
+.service-text {
+    width: 55%; /* El texto ocupa el 55% del ancho */
+    text-align: left; /* Alineación a la izquierda */
+    padding-left: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.service-text h2 {
+    font-size: 2rem;
+    color: #008CBA; /* Color llamativo */
+    margin-bottom: 15px;
+}
+
+.service-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 🔹 Diseño Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+    /* Cambiar la disposición de la imagen y el texto en pantallas pequeñas */
+    .service-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-img {
+        width: 80%; /* En pantallas pequeñas, la imagen ocupa más ancho */
+        margin-bottom: 20px; /* Espacio debajo de la imagen */
+    }
+
+    .service-text {
+        width: 80%;
+        padding-left: 0; /* Eliminar el padding izquierdo */
+    }
+
+    .service-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-text p {
+        font-size: 1rem;
+    }
+}
+/* 🔹 Sección de Contacto */
+#contact {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #f9f9f9; /* Fondo suave */
+}
+
+/* 🔹 Título de la sección de Contacto */
+#contact h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* 🔹 Descripción de la sección */
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* 🔹 Contenedor principal del formulario y la información de contacto */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Estilo del formulario de contacto */
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #008CBA;
+    margin-top: 10px;
+    display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #008CBA;
+    box-shadow: 0 0 5px rgba(0, 140, 186, 0.5);
+    outline: none;
+}
+
+.contact-form button {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #005f87;
+    transform: scale(1.05);
+}
+
+/* 🔹 Estilo de la Información de Contacto */
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+    color: #333;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    color: #008CBA;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Estilo para los párrafos de información de contacto */
+.contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Botón de WhatsApp */
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+    transform: scale(1.05);
+}
+
+.whatsapp-icon {
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* 🔹 Diseño Responsivo */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form,
+    .contact-info {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 1rem;
+    }
+}
+
